@@ -21,19 +21,24 @@ splay=swap" rel="stylesheet">
 <title>Document</title> 
 </head>
 <body>
-    <div class="confirm">
+    <div class="login">
         <div class="form-container">
             <img src="/logos/logo.svg" alt="logo" class="logo">
 
-            <h1 class="title">Email has been sent!</h1>
-            <p class="subtitle"> Please check your inbox for instructions on how to reset the password</p>
-            <div class="letter-container">
-                <img src="/icons/email.svg" alt="letter" class="letter">
-            </div>
+            <h1 class="title">My account</h1>
+
             <form action="/" class="form">
+                <label for="name" class="label">Name</label>
+                <span class="adcolor input input-password">User Name</span>
+                
+                <label for="Email" class="label">Email</label>
+                <span class="adcolor input input-password"> User Email</span>
+
+                <label for="password" class="label">Password</label>
+                <span class="adcolor input input-password"> User address</span>
            
-                <input type="submit" value="Login" class="primary-button login-button">
-                <p class="subtitle"> Didn't recive the email? <a href="Resend" class="resend">Resend</a></p>
+                <input type="submit" value="Edit" class="sign-up-button login-button">
+
             </form>
 
         </div>
