@@ -1,3 +1,4 @@
+/* Variables principales del proyect */
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -10,10 +11,13 @@
     --card-size: 100px;
 }
 
+/* tipografia general */
 body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
 }
+
+/* Pantallas centradas*/
 .login{
     width: 100%;
     height: 100vh;
@@ -26,6 +30,8 @@ body{
     display: grid;
     place-items: center;
 }
+
+/* Contenedor base */
 .form-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -42,18 +48,21 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+
 .logo  {
     width: 150px;
     margin-bottom: 48px;
     justify-self: center;
     display: none;
 }
+
 .email{
     margin: 300px;
     width: 90px;
     height: 90px;
     background-color: var(--very-light-pink);
 }
+
 .title {
     font-size: var(--lg);
     margin-bottom: 12px;
@@ -67,13 +76,11 @@ body{
     margin-top: 0;
     margin-bottom: 32px;
     text-align: center;
-
-
 }
+
 .form {
     display: flex;
     flex-direction: column;
-
 }
 
 .label{
@@ -81,6 +88,8 @@ body{
     font-weight: bold;
     margin-bottom: 4px;
 }
+
+/* Inputs con estilo limpio y redondeado */
 .input {
     background-color: var(--text-imput-field);
     border: none;
@@ -89,9 +98,9 @@ body{
     font-size: var(--md);
     padding: 6px;
     margin-bottom: 12px;
-
 }
 
+/* Boton principal */
 .primary-button {
     background-color: var(--rojo);
     border-radius: 8px;
@@ -102,12 +111,13 @@ body{
     font-size: var(--md);
     font-weight: bold;
     height: 50px;
-
 }
+
 .login-button {
     margin-top: 14px;
     margin-bottom: 30px;
 }
+
 .sign-up-button {
     background-color: var(--white);
     border-radius: 8px;
@@ -121,15 +131,18 @@ body{
     margin-top: 60px;
     margin-bottom: 30px;
 }
+
 .resend{
     color: var(--rojo);
     text-decoration: none;
 }
+
 .forgot{
     color: var(--rojo);
     text-align: center;
     text-decoration: none;
 }
+
 .letter-container{
     width: 110px;
     height: 110px;
@@ -145,9 +158,12 @@ body{
 .letter{
     width: 70px;
 }
+
 .adcolor{
     color: var(--very-light-pink)
 }
+
+/* Productos */
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--card-size));
@@ -166,43 +182,45 @@ body{
     object-fit: cover;
     margin: 5px;
 }
- .product-info {
+
+.product-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
- }
- .product-info figure {
+}
+
+.product-info figure {
     margin: 0;
 }
 
- .product-info figure img{
+.product-info figure img{
     width: 35px;
     height: 35px;
+}
 
- }
-
- .product-info div p:nth-child(1) {
+.product-info div p:nth-child(1) {
     font-weight: bold;
     font-size: var(--md);
     margin-top: 0;
     margin-bottom: 4px;
- }
+}
 
-
- .product-info div p:nth-child(2) {
+.product-info div p:nth-child(2) {
     font-size: var(--sm);
     margin-top: 0;
     margin-bottom: 0;
     color: var(--very-light-pink);
- }
- .main-menu{
+}
+
+.main-menu{
     font-size: var(--lg);
     margin-bottom: 12px;
     text-align: left;
- }
- 
- .list-container{
+}
+
+/* menú */
+.list-container{
     padding: 12px;
     text-align: right;
     font-size: var(--md);
@@ -211,75 +229,81 @@ body{
     margin: 10px;
     border-radius: 8px;
     width: 120px;
-    
+}
 
- }
- .list-container a{
+.list-container a{
     font-size: var(--md);
     text-decoration: none;
     color: var(--black);
- }
- .sign-out-list a{
+}
+
+.sign-out-list a{
     font-weight: normal;
- }
-  .list-container ul:first-child a{
+}
+
+.list-container ul:first-child a{
    font-weight:bold; 
-   
- }
+}
 
- .list-container ul:first-child li{
+.list-container ul:first-child li{
     padding: 10px 0;
-
- }
- 
+}
 
 ul{
     list-style: none;
     padding: 10px;
     margin: 0;
 }
+
 .categories-menu{
     font-size: var(--lg);
     margin: 10px 0 0  9px;
     text-align: left;
 }
+
 .menu-list {
     padding: 0;  
 }
+
 .menu-list a {
     font-weight: bold;
     color: var(--black);     
     font-size: var(--md);
     text-decoration: none;  
-    
 }
+
 .menu-list li{
     padding: 10px;
 }
+
 .sign-out{
     padding: 0; 
 }
+
 .sign-out a{
     font-weight: bold;
     color: var(--black);     
     font-size: var(--sm);
     text-decoration: none;  
 }
+
 .sign-out li{
     padding: 10px;
 }
+
 .menu-email{
     font-size: var(--sm);
     color: var(--very-light-pink);
     margin: 12px;
-    
 }
+
 .line-between{
     height: 1px;
     background-color: var(--very-light-pink);
     margin: 15px 10px 15px 10px;
 }
- 
+
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 640px){
     .logo{
         display: block;
@@ -291,6 +315,4 @@ ul{
     :root {
         --card-size: 140px;
     }
-    
 }
-
